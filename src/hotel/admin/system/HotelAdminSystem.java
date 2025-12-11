@@ -1,20 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package hotel.admin.system;
+import javax.swing.*;
 
-/**
- *
- * @author dines
- */
-public class HotelAdminSystem {
-
-    /**
-     * @param args the command line arguments
-     */
+public class HotelAdminSystem extends JFrame {
+        HotelAdminSystem(){
+            
+            setSize(1366,565);
+            
+            ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/first.jpg"));
+            JLabel image = new JLabel(i1);
+            
+            add (image);
+            setVisible(true);
+            setLocation(100, 100);
+            
+        }
     public static void main(String[] args) {
-        // TODO code application logic here
+        new HotelAdminSystem();
     }
     
 }
