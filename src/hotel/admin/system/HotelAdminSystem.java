@@ -31,17 +31,16 @@ public class HotelAdminSystem extends JFrame {
                 next.setFont(new Font("Tahoma", Font.BOLD, 14));
                 image.add(next);
 
-//                // Styled Login button (top-right) — matches title weight and uses an accent color
+//            Styled Login button (top-right)
 //                JButton login = new JButton("Login");
 //                login.setBounds(1100,30,100,40);
-//                // Accent color that pairs with white title text and the orange accent used elsewhere
 //                login.setBackground(new Color(220, 100, 0)); // warm orange
 //                login.setForeground(Color.WHITE);
 //                login.setFont(new Font("Tahoma", Font.BOLD, 14));
 //                login.setFocusPainted(false);
 //                image.add(login);
 
-                // Open a small modal login dialog when clicked
+            // Open a small modal login dialog when clicked
                 next.addActionListener(evt -> {
                     JDialog dlg = new JDialog(this, "Admin Login", true);
                     dlg.setSize(380,200);
@@ -77,7 +76,8 @@ public class HotelAdminSystem extends JFrame {
 
                     signIn.addActionListener(ae -> {
                         String username = userField.getText();
-                        // Placeholder: no auth implemented here — show a simple message
+                        
+            // Placeholder: no auth implemented here — show a simple message
                         JOptionPane.showMessageDialog(dlg, "Login attempt for: " + username);
                         dlg.dispose();
                     });
